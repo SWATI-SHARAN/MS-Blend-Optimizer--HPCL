@@ -1,0 +1,115 @@
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  max-width: calc(100vw - 40px);
+  width: auto;
+  padding: 40px;
+  overflow-y: auto;
+  max-height: calc(100vh - 80px); /* Ensures the popup does not exceed the viewport height */
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-size: 24px;
+}
+
+.attribute-container {
+  margin-top: 20px;
+}
+
+.attribute-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.attribute-row span {
+  flex: 0 0 150px;
+  font-weight: bold;
+}
+
+.attribute-row input,
+.attribute-row select {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px; /* Increased padding for better look */
+  width: 150px; /* Increased width of the input field */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.attribute-row input:focus,
+.attribute-row select:focus {
+  border-color: #a45fb0;
+  outline: none;
+}
+
+.method-select {
+  flex-grow: 1;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-evenly; /* Center align the buttons */
+  margin-top: 20px;
+}
+
+.button-group button {
+  padding: 10px 20px;
+  background-color: #a45fb0;
+  margin-top: 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-group button:hover {
+  background-color: #8a4b8d;
+}
+
+.manual-value {
+  margin-top: 10px;
+}
+
+/* .close-btn {
+  background-color: #ff5c5c;
+  margin-top: 20px;
+}
+
+.close-btn:hover {
+  background-color: #e04e4e;
+} */
+
+.inputstyle {
+  /* margin-left: 3px; */
+  margin-right: 10px;
+  padding: 10px; /* Increased padding */
+  width: 150px; /* Increased width */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  flex-grow: 1;
+}
+
+.inputstyle2 {
+  margin-left: 10px;
+  /* margin-right: 10px; */
+  padding: 10px; /* Increased padding */
+  width: 84px; /* Increased width */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  flex-grow: 1;
+  justify-content: space-around;
+}

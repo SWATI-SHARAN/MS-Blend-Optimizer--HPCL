@@ -1,0 +1,132 @@
+.main-screen {
+  background-color: #000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.msBlendOptimisation {
+  background-color: var(--color-gray-100);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 100%; 
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.msBlendOptimisationContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  width: 100%;
+}
+
+.optimumBlend1 {
+  color: white;
+  font-size: 50px;
+  margin: 0; 
+}
+
+.date-time-display {
+  color: white;
+  font-size: 18px;
+}
+
+.black-background {
+  background-color: #000;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: auto;
+  max-height: 70vh;
+}
+
+.less-opacity-box {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+}
+
+.table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #343a40;
+}
+
+.heading-spacing {
+  padding-left: 40px;
+}
+
+.space {
+  padding: 1rem 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%; 
+  margin-top: 20px;
+}
+
+.button {
+  background-color: var(--color-orchid);
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #a45fb0; 
+}
+
+.back-button {
+  position: absolute;
+  left: 20px;
+  top: 20px; 
+  text-decoration: none;
+  height: 50px;
+  width: 50px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-gray-100);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.back-button img {
+  height: 100%; 
+  width: auto;
+}
+
+.back-button:hover {
+  background-color: #a45fb0; 
+}
